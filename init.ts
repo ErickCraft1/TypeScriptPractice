@@ -250,17 +250,67 @@ persona.name
     ['X', '', 'O']   // <-- string[]
 */
 
-type CellValue = 'X' | 'O' | ''
-type GameBoard = [
-    [CellValue, CellValue, CellValue],
-    [CellValue, CellValue, CellValue],
-    [CellValue, CellValue, CellValue]
-]
+// type CellValue = 'X' | 'O' | ''
+// type GameBoard = [
+//     [CellValue, CellValue, CellValue],
+//     [CellValue, CellValue, CellValue],
+//     [CellValue, CellValue, CellValue]
+// ]
 
-const gameBoard: GameBoard = [
-    ['X', 'O', 'X'],
-    ['O', 'X', 'O'],
-    ['X', '', 'O']
-]
+// const gameBoard: GameBoard = [
+//     ['X', 'O', 'X'],
+//     ['O', 'X', 'O'],
+//     ['X', '', 'O']
+// ]
 
-type RGB = [number, number, number]
+// type RGB = readonly [number, number, number]
+
+// const black: RGB = [0, 0, 0]
+
+// console.log(black);
+
+
+// Enums
+
+/** En Js no existen los enums por lo tanto podríamos hacer algo así */
+
+/**JS */
+// const ERROR_TYPES = {
+//     NOT_FOUND: 'notFound',
+//     UNAUTHORIZED: 'unauthorized',
+//     FORBIDDEN: 'forbidden'
+// }
+
+// function viewMessage(typeError) {
+//     (typeError === ERROR_TYPES.NOT_FOUND) ?
+//         console.log('No se encuentra el recurso')
+//         : (typeError === ERROR_TYPES.UNAUTHORIZED) ?
+//             console.log('No tienes permiso para acceder')
+//             : (console.log('No tines permisos para acceder'))
+// }
+
+/**TS */
+
+// const enum ERROR_TYPES {  // no usar const cuando la porcion de codigo se va a usar en otras aplicaciones
+//     NOT_FOUND = 'notFound',
+//     UNAUTHORIZED = 'unauthorized',
+//     FORBIDDEN = 'forbidden'
+// }
+
+// function viewMessage(typeError: ERROR_TYPES) {
+//     (typeError === ERROR_TYPES.NOT_FOUND) ?
+//         console.log('No se encuentra el recurso')
+//         : (typeError === ERROR_TYPES.UNAUTHORIZED) ?
+//             console.log('No tienes permiso para acceder')
+//             : (console.log('No tines permisos para acceder'))
+// }
+
+
+// Aserciones de tipo
+
+const canvas = document.querySelector('canvas')
+
+if (canvas instanceof HTMLCanvasElement) {
+    const ctx = canvas.getContext('2d')
+}
+

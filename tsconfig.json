@@ -1,5 +1,8 @@
 {
     "compilerOptions": {
+        "target": "esnext",
+        "module": "nodenext",
         "noImplicitAny": false
-    }
+    },
+    "include": ["./**/*.ts", "./**/*.mts"]
 }
