@@ -11,4 +11,4 @@ const calculator = (a: number, b: number, op: Operation): Result => {
     throw new Error('Operation is not valid')
 }
 
-console.log(calculator(1, 3, 'add'));
+console.log(calculator(1, 3, 'add'))

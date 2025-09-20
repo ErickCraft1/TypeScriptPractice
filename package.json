@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev":"ts-node excercise/type.ts",
     "calculator": "ts-node calculator.ts",
     "multiplier": "ts-node multiplier.ts",
     "init": "ts-node init.ts",
+    "poo":"ts-node poo.ts",
     "fetch": "node --import ./dev-loader.mjs fetchingDatos.mts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
